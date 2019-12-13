@@ -63,7 +63,7 @@ def time_and_info(x, y, z):
     return f"{x}時の{y}は{z}"
 
 
-print(time_and_info(12, "気温", 22.4))
+# print(time_and_info(12, "気温", 22.4))
 
 
 def cipher(line):
@@ -77,5 +77,15 @@ def cipher(line):
     return "".join(b)
 
 
-print(cipher("Unityすき"))
+# print(cipher("Unityすき"))
 
+a = "I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."
+import random
+b = a.split()
+for i, j in enumerate(b):
+    if len(j) > 4:
+        c = list(j[1:-1])
+        random.shuffle(c)
+        b[i] = j[0] + "".join(c) + j[-1]
+print(a.split())
+print(b)
